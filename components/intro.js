@@ -29,8 +29,9 @@ export default function Intro() {
           <a
             href="https://github.com/michaelDpierce"
             hrefLang={LANGUAGE_LOCALE}
-            rel="external"
+            rel="noopener"
             target="_blank"
+            rel="noopener"
           >
             GitHub - @michaelDpierce
           </a>
@@ -39,7 +40,7 @@ export default function Intro() {
           <a
             href="https://news.ycombinator.com/user?id=matchmike1313"
             hrefLang={LANGUAGE_LOCALE}
-            rel="external"
+            rel="noopener"
             target="_blank"
           >
             Hacker News - @matchmike1313
@@ -80,7 +81,7 @@ export default function Intro() {
         <a
           href="https://www.investopedia.com/terms/f/financial-independence-retire-early-fire.asp"
           hrefLang={LANGUAGE_LOCALE}
-          rel="external"
+          rel="noopener"
           target="_blank"
         >
           FIRE
