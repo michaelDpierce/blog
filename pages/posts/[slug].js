@@ -25,8 +25,8 @@ export default function Post({ post, morePosts, preview }) {
 
   let isoDate;
 
-  if (post.date) {
-    isoDate = new Date(post.date).toISOString();
+  if (post) {
+    isoDate = new Date(post?.date).toISOString();
   }
 
   return (
