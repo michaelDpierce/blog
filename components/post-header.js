@@ -1,9 +1,7 @@
-import Date from '../components/date'
-import PostTitle from '../components/post-title'
+import Date from './date'
+import PostTitle from './post-title'
 
 export default function PostHeader({ title, date }) {
-  console.log(date)
-
   return (
     <>
       <PostTitle>{title[0].text}</PostTitle>

@@ -1,4 +1,4 @@
-import PostPreview from '../components/post-preview'
+import PostPreview from './post-preview'
 
 export default function MorePosts({ posts }) {
   return (
