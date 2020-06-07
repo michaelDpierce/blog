@@ -6,6 +6,12 @@
         "label": "name"
       }
     },
+    "twitter_handle": {
+      "type": "Text",
+      "config": {
+        "label": "twitter_handle"
+      }
+    },
     "picture": {
       "type": "Image",
       "config": {

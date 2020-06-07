@@ -20,14 +20,6 @@
         "label": "excerpt"
       }
     },
-    "coverimage": {
-      "type": "Image",
-      "config": {
-        "constraint": {},
-        "thumbnails": [],
-        "label": "coverimage"
-      }
-    },
     "date": {
       "type": "Date",
       "config": {
@@ -46,6 +38,24 @@
       "type": "UID",
       "config": {
         "label": "slug"
+      }
+    },
+    "og_section": {
+      "type": "Text",
+      "config": {
+        "label": "og_section"
+      }
+    },
+    "og_tags": {
+      "type": "Text",
+      "config": {
+        "label": "og_tags"
+      }
+    },
+    "og_description": {
+      "type": "Text",
+      "config": {
+        "label": "og_description"
       }
     }
   }

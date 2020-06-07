@@ -1,21 +1,31 @@
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import ErrorPage from 'next/error'
+
+import { SITE_NAME } from '../../lib/constants'
+
 import Container from '../../components/container'
 import PostBody from '../../components/post-body'
-import MoreStories from '../../components/more-stories'
+import MorePosts from '../../components/more-posts'
 import Header from '../../components/header'
 import PostHeader from '../../components/post-header'
 import SectionSeparator from '../../components/section-separator'
 import Layout from '../../components/layout'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
-import { CMS_NAME } from '../../lib/constants'
+
+export const HOST_URL = process.env.HOST_URL
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
   if (!router.isFallback && !post?._meta?.uid) {
     return <ErrorPage statusCode={404} />
+  }
+
+  let isoDate;
+
+  if (post.date) {
+    isoDate = new Date(post.date).toISOString();
   }
 
   return (
@@ -26,25 +36,44 @@ export default function Post({ post, morePosts, preview }) {
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article>
-              <Head>
-                <title>
-                  {post.title[0].text} | Next.js Blog Example with {CMS_NAME}
-                </title>
-                <meta property="og:image" content={post.coverimage.url} />
-              </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverimage}
-                date={post.date}
-                author={post.author}
+            <Head>
+              <title>
+                {`${post.title[0].text} | ${SITE_NAME}`}
+              </title>
+
+              {/* Open Graph */}
+              <meta property="og:site_name" content={SITE_NAME} />
+              <meta property="og:title" content={post.title[0].text} />
+              <meta property="og:description" content={post.og_description} />
+              <meta
+                property="og:url"
+                content={`${HOST_URL}/posts/${post._meta.uid}`}
               />
-              <PostBody content={post.content} />
-            </article>
+              <meta property="og:image" content="/opengraph.png" />
+              <meta property="og:type" content="article" />
+
+              {/* Open Graph Article */}
+              <meta property="article:published_time" content={isoDate} />
+              <meta property="article:author" content={post.author.name} />
+              <meta property="article:section" content={post.og_section} />
+              <meta property="article:tag" content={post.og_tags} />
+
+              {/* Twitter */}
+              <meta name="twitter:card" content={post.og_description} />
+              {post.author.twitter_handle &&
+               <meta name="twitter:creator" content={post.author.twitter_handle} />
+              }
+            </Head>
+            <PostHeader
+              title={post.title}
+              date={post.date}
+            />
+            <PostBody content={post.content} />
             <SectionSeparator />
             {morePosts && morePosts.length > 0 && (
-              <MoreStories posts={morePosts} />
+              <MorePosts posts={morePosts} />
             )}
+            <br />
           </>
         )}
       </Container>
