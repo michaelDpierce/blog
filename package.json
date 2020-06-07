@@ -1,6 +1,10 @@
 {
   "name": "mpierce-blog",
   "version": "0.0.1",
+  "description": "Michael Pierce's Personal Blog",
+  "author": "Michael Pierce",
+  "license": "MIT",
+  "homepage": "https://mpierce.blog",
   "scripts": {
     "dev": "next",
     "build": "next build",
