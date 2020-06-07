@@ -4,7 +4,9 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en" prefix="og: http://ogp.me/ns#">
-        <Head />
+        <Head>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css"></link>
+        </Head>
         <body>
           <Main />
           <NextScript />

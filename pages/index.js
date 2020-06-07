@@ -31,7 +31,7 @@ export default function Index({ preview, allPosts }) {
         </Container>
       </Layout>
     </>
-  )
+  );
 }
 
 export async function getStaticProps({ preview = false, previewData }) {
