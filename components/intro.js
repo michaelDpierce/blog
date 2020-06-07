@@ -23,6 +23,7 @@ export default function Intro() {
       <hr />
       You Can Find Me Around Here:
       <br />
+      <br />
       <a
         href="https://github.com/michaelDpierce"
         hrefLang={LANGUAGE_LOCALE}
@@ -32,6 +33,7 @@ export default function Intro() {
       >
         GitHub - @michaelDpierce
       </a>
+      <br />
       <br />
       <a
         href="https://news.ycombinator.com/user?id=matchmike1313"
@@ -49,7 +51,9 @@ export default function Intro() {
       <address>
         <a href="mailto:matchmike1313@gmail.com">matchmike1313@gmail.com</a>
         <br />
+        <br />
         <a href="tel:+1 781-697-9583">781-697-9583</a>
+        <br />
         <br />
         <a href="sms:+1 781-697-9583">781-697-9583</a>
         <br />
