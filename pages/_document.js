@@ -5,7 +5,10 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en" prefix="og: http://ogp.me/ns#">
         <Head>
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css"></link>
+          <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css"
+          />
         </Head>
         <body>
           <Main />
