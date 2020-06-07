@@ -1,4 +1,4 @@
-import { PrismicClient } from '../../lib/api'
+import { PrismicClient } from '@lib/api'
 
 function linkResolver(doc) {
   // Pretty URLs for known types

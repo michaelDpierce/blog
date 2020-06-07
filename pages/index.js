@@ -1,10 +1,12 @@
-import Container from '../components/container'
-import MorePosts from '../components/more-posts'
-import HeroPost from '../components/hero-post'
-import Layout from '../components/layout'
-import Intro from '../components/intro'
-import { getAllPostsForHome } from '../lib/api'
-import Head from 'next/head'
+import Head from 'next/head';
+
+import Container from '@components/container'
+import HeroPost from '@components/hero-post'
+import Intro from '@components/intro'
+import Layout from '@components/layout'
+import MorePosts from '@components/more-posts'
+
+import { getAllPostsForHome } from '@lib/api'
 
 export default function Index({ preview, allPosts }) {
   const heroPost = allPosts[0].node

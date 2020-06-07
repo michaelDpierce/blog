@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { RichText } from 'prismic-reactjs'
-import Date from '../components/date'
+import Date from './date'
 
 export default function PostPreview({
   title,
