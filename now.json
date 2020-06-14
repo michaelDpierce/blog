@@ -1,0 +1,58 @@
+{
+  "alias": ["www.mpierce.blog"],
+  "routes": [
+    {
+  "headers": [
+    {
+      "source": "/service-worker.js",
+      "headers" : [
+        {
+          "key" : "Cache-Control",
+          "value" : "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/posts/*",
+      "headers" : [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=60, stale-while-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers" : [
+        {
+          "key" : "X-Content-Type-Options",
+          "value" : "nosniff"
+        },
+        {
+          "key" : "X-Frame-Options",
+          "value" : "DENY"
+        },
+        {
+          "key" : "X-XSS-Protection",
+          "value" : "1; mode=block"
+        },
+                {
+          "key" : "Referrer-Policy",
+          "value" : "same-origin"
+        },
+        {
+          "key" : "Access-Control-Allow-Origin",
+          "value" : "https://*.mpierce.blog"
+        },
+        {
+          "key" : "Strict-Transport-Security",
+          "value" : "max-age=2592000; includeSubDomains; preload"
+        },
+        {
+          "key" : "Feature-Policy",
+          "value" : "autoplay 'none';geolocation 'none';picture-in-picture 'none';midi 'none';notifications 'none';push 'none';microphone 'none';camera 'none';magnetometer 'none';gyroscope 'none';speaker 'none';vibrate 'none';fullscreen 'none';payment 'none';"
+        }
+      ]
+    }
+  ]
+}
