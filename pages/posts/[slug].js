@@ -38,9 +38,12 @@ export default function Post({ post, morePosts, preview }) {
         ) : (
           <>
             <Head>
-              <title>
-                {`${post.title[0].text} | ${SITE_NAME}`}
-              </title>
+              <title>{`${post.title[0].text} | ${SITE_NAME}`}</title>
+
+              <link
+                rel="canonical"
+                content={`${HOST_URL}/posts/${post._meta.uid}`}
+              />
 
               {/* Open Graph */}
               <meta property="og:site_name" content={SITE_NAME} />
@@ -50,6 +53,7 @@ export default function Post({ post, morePosts, preview }) {
                 property="og:url"
                 content={`${HOST_URL}/posts/${post._meta.uid}`}
               />
+              <meta property="og:locale" content="en_us" />
               <meta property="og:image" content="/opengraph.png" />
               <meta property="og:type" content="article" />
 
@@ -61,14 +65,15 @@ export default function Post({ post, morePosts, preview }) {
 
               {/* Twitter */}
               <meta name="twitter:card" content={post.og_description} />
-              {post.author.twitter_handle &&
-               <meta name="twitter:creator" content={post.author.twitter_handle} />
-              }
+              {post.author.twitter_handle && (
+                <meta
+                  name="twitter:creator"
+                  content={post.author.twitter_handle}
+                />
+              )}
+              <meta name="twitter:domain" content={HOST_URL} />
             </Head>
-            <PostHeader
-              title={post.title}
-              date={post.date}
-            />
+            <PostHeader title={post.title} date={post.date} />
             <PostBody content={post.content} />
             <SectionSeparator />
             {morePosts && morePosts.length > 0 && (
@@ -79,7 +84,7 @@ export default function Post({ post, morePosts, preview }) {
         )}
       </Container>
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps({ params, preview = false, previewData }) {
