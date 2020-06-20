@@ -5,6 +5,7 @@ import HeroPost from '@components/hero-post'
 import Intro from '@components/intro'
 import Layout from '@components/layout'
 import MorePosts from '@components/more-posts'
+import SectionSeparator from '@components/section-separator';
 
 import { getAllPostsForHome } from '@lib/api'
 
@@ -18,6 +19,9 @@ export default function Index({ preview, allPosts }) {
           <title>Michael Pierce's Blog</title>
         </Head>
         <Intro />
+        <br />
+        <SectionSeparator />
+        <h2>Posts</h2>
         <Container>
           {heroPost && (
             <HeroPost
@@ -28,6 +32,7 @@ export default function Index({ preview, allPosts }) {
           )}
           {morePosts.length > 0 && <MorePosts posts={morePosts} />}
           <br />
+          <SectionSeparator />
         </Container>
       </Layout>
     </>

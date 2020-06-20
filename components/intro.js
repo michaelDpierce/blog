@@ -25,13 +25,13 @@ export default function Intro() {
       <br />
       <br />
       <a
-        href="https://github.com/michaelDpierce"
+        href="https://www.indiehackers.com/matchmike1313"
         hrefLang={LANGUAGE_LOCALE}
         rel="noopener"
         target="_blank"
         rel="noopener"
       >
-        GitHub - @michaelDpierce
+        IndieHackers - @matchmike1313
       </a>
       <br />
       <br />
@@ -45,17 +45,22 @@ export default function Intro() {
       </a>
       <br />
       <br />
+      <a
+        href="https://github.com/michaelDpierce"
+        hrefLang={LANGUAGE_LOCALE}
+        rel="noopener"
+        target="_blank"
+        rel="noopener"
+      >
+        GitHub - @michaelDpierce
+      </a>
+      <br />
+      <br />
       Or Contact Me Directly:
       <br />
       <br />
       <address>
         <a href="mailto:matchmike1313@gmail.com">matchmike1313@gmail.com</a>
-        <br />
-        <br />
-        <a href="tel:+1 781-697-9583">781-697-9583</a>
-        <br />
-        <br />
-        <a href="sms:+1 781-697-9583">781-697-9583</a>
         <br />
       </address>
       <br />
