@@ -73,7 +73,12 @@ export default function Post({ post, morePosts, preview }) {
               )}
               <meta name="twitter:domain" content={HOST_URL} />
             </Head>
-            <PostHeader title={post.title} date={post.date} />
+            <PostHeader
+              title={post.title}
+              author={post.author}
+              date={post.date}
+              content={post.content}
+            />
             <PostBody content={post.content} />
             <SectionSeparator />
             {morePosts && morePosts.length > 0 && (

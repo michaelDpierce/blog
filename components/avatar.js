@@ -1,11 +1,5 @@
-export default function Avatar({ name, picture }) {
+export default function Avatar({ name }) {
   return (
-    <>
-      <img
-        src={picture.url}
-        alt={name[0].text}
-      />
-      {name}
-    </>
+    <time>{name}</time>
   )
 }
