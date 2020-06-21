@@ -12,6 +12,7 @@ import PostBody from '@components/post-body'
 import PostHeader from '@components/post-header'
 import PostTitle from '@components/post-title'
 import SectionSeparator from '@components/section-separator'
+import Subscribe from '@components/subscribe';
 
 import { getAllPostsWithSlug, getPostAndMorePosts } from '@lib/api';
 
@@ -80,7 +81,10 @@ export default function Post({ post, morePosts, preview }) {
               content={post.content}
             />
             <PostBody content={post.content} />
+            <br />
             <SectionSeparator />
+            <br />
+            <Subscribe />
             {morePosts && morePosts.length > 0 && (
               <MorePosts posts={morePosts} />
             )}

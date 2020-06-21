@@ -537,10 +537,9 @@ summary::-webkit-details-marker {
 }
 
 footer {
-  border-top: 1px solid var(--background);
   padding-top: 10px;
   font-size: 0.8em;
-  color: var(--text-muted);
+  color: var(--text-main);
 }
 
 /*# sourceMappingURL=dark.standalone.css.map */

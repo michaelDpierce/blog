@@ -6,6 +6,7 @@ import Intro from '@components/intro'
 import Layout from '@components/layout'
 import MorePosts from '@components/more-posts'
 import SectionSeparator from '@components/section-separator';
+import Subscribe from '@components/subscribe';
 
 import { getAllPostsForHome } from '@lib/api'
 
@@ -33,6 +34,7 @@ export default function Index({ preview, allPosts }) {
           {morePosts.length > 0 && <MorePosts posts={morePosts} />}
           <br />
           <SectionSeparator />
+          <Subscribe />
         </Container>
       </Layout>
     </>
