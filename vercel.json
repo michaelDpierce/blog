@@ -9,6 +9,8 @@
   "build": {
     "env": {
       "HOST_URL": "@host_url",
+      "MAILCHIMP_LIST_ID": "@mailchimp-list-id",
+      "MAILCHIMP_API_KEY": "@mailchimp-api-key",
       "PRISMIC_API_TOKEN": "@prismic_api_token",
       "PRISMIC_REPOSITORY_NAME": "@prismic_repository_name"
     }
