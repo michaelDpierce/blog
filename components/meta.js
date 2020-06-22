@@ -13,8 +13,6 @@ export default function Meta() {
       <meta content="#202B38" name="theme-color" />
       <meta content="#202B38" name="msapplication-TileColor" />
 
-      {/* <meta content="/favicons/browserconfig.xml" name="msapplication-config" /> */}
-
       <link href="/favicons/site.webmanifest" rel="manifest" />
       <link
         rel="shortcut icon"
@@ -39,7 +37,6 @@ export default function Meta() {
         sizes="16x16"
         type="image/png"
       />
-      {/* <link color="#202B38" href="/static/favicons/safari-pinned-tab.svg" rel="mask-icon" /> */}
     </Head>
   );
 }
