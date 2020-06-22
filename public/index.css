@@ -1,9 +1,3 @@
-/**
- * Standalone dark-themed version.
- * Includes dark variables and core, left as CSS variables
- * so the theming can be adjusted at runtime.
- */
-
 :root {
   --background-body: #202b38;
   --background: #161f27;

@@ -28,3 +28,6 @@ yarn-error.log*
 .env.development
 .env.development.local
 
+# Original CSS
+/public/index.css
+
