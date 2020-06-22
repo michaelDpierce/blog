@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b6b47255-0de1-49d6-b391-bf39e6f8622b/deploy-status)](https://app.netlify.com/sites/mpierce/deploys)
+![](https://img.shields.io/security-headers?url=https%3A%2F%2Fmpierce.blog)
 
 # Michael Pierce's Blog
 
