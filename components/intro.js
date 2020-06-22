@@ -79,7 +79,7 @@ export default function Intro() {
           rel="noopener"
           target="_blank"
         >
-          FIRE
+          F.I.R.E.
         </a>{' '}
         movement.
       </p>
