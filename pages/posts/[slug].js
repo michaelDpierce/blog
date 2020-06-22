@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import ErrorPage from 'next/error'
+import ErrorPage from '../404'
 import Head from 'next/head'
 
 import { SITE_NAME } from '@lib/constants'
@@ -21,7 +21,7 @@ export const HOST_URL = process.env.HOST_URL
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
   if (!router.isFallback && !post?._meta?.uid) {
-    return <ErrorPage statusCode={404} />
+    return <ErrorPage />
   }
 
   let isoDate;
