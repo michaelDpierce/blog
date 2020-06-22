@@ -32,6 +32,7 @@ const Subscribe = () => {
       return;
     }
 
+    window.fathom.trackGoal('WPWJOPKL', 0);
     setSuccessMessage("You are now subscribed!")
     inputEl.current.value = '';
   };
