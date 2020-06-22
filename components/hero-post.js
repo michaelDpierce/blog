@@ -10,7 +10,7 @@ export default function HeroPost({
   return (
     <section>
       <h3>
-        <Link as={`/posts/${slug}`} href="/posts/[slug]">
+        <Link as={`/posts/${slug}`} href="/posts/[slug]" prefetch={false}>
           <a>
             <RichText render={title} />
           </a>
@@ -19,5 +19,5 @@ export default function HeroPost({
 
       <Date dateString={date} />
     </section>
-  )
+  );
 }

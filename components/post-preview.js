@@ -9,14 +9,12 @@ export default function PostPreview({
 }) {
   return (
     <div>
-      <Link as={`/posts/${slug}`} href="/posts/[slug]">
-        <a>
-          {RichText.asText(title)}
-        </a>
+      <Link as={`/posts/${slug}`} href="/posts/[slug]" prefetch={false}>
+        <a>{RichText.asText(title)}</a>
       </Link>
       {' - '}
       <Date dateString={date} />
     </div>
-  )
+  );
 }
 
