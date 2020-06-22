@@ -1,5 +1,3 @@
-import Head from 'next/head';
-
 import Container from '@components/container'
 import HeroPost from '@components/hero-post'
 import Intro from '@components/intro'
@@ -16,9 +14,6 @@ export default function Index({ preview, allPosts }) {
   return (
     <>
       <Layout preview={preview}>
-        <Head>
-          <title>Michael Pierce's Blog</title>
-        </Head>
         <Intro />
         <br />
         <SectionSeparator />
