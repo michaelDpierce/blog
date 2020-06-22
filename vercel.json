@@ -27,7 +27,7 @@
       ]
     },
     {
-      "source": "/posts/*",
+      "source": "/posts/(*)",
       "headers": [
         {
           "key": "Cache-Control",
