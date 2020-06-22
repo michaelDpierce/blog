@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+export const FATHOM_SITE = process.env.FATHOM_SITE;
+
 export default function Meta() {
   return (
     <Head>
@@ -11,6 +13,12 @@ export default function Meta() {
       <meta name="googlebot" content="index,follow" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="Michael Pierce's Blog" />
+
+      <script
+        src="https://cdn.usefathom.com/script.js"
+        site={FATHOM_SITE}
+        defer
+      />
     </Head>
   );
 }

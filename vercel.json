@@ -1,5 +1,6 @@
 {
   "env": {
+    "FATHOM_SITE": "@fathom-site",
     "HOST_URL": "@host_url",
     "MAILCHIMP_LIST_ID": "@mailchimp-list-id",
     "MAILCHIMP_API_KEY": "@mailchimp-api-key",
@@ -8,6 +9,7 @@
   },
   "build": {
     "env": {
+      "FATHOM_SITE": "@fathom-site",
       "HOST_URL": "@host_url",
       "MAILCHIMP_LIST_ID": "@mailchimp-list-id",
       "MAILCHIMP_API_KEY": "@mailchimp-api-key",
