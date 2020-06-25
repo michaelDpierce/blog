@@ -3,16 +3,10 @@ export default function Stats({ readingTime} ) {
 
   return (
     <>
-      <style jsx>{`
-        span {
-          float: right;
-        }
-      `}</style>
-      <span>
-        <time>{text}</time>
-        {' • '}
-        <time>{`${words} words`}</time>
-      </span>
+      <time>{text}</time>
+      or
+      <time>{`${words} words`}</time>
+      to consume
     </>
   );
 }

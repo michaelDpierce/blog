@@ -80,6 +80,7 @@ export default function Post({ post, morePosts, preview }) {
               date={post.date}
               content={post.content}
             />
+            <br />
             <PostBody content={post.content} />
             <br />
             <SectionSeparator />

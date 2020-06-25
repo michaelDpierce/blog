@@ -13,10 +13,12 @@ export default function PostHeader({ title, author, date, content }) {
   return (
     <>
       <PostTitle>{title[0].text}</PostTitle>
+      By
       <Avatar name={author.name} />
-      {' • '}
+      on
       <Date dateString={date} />
-      <Stats readingTime={readingTime} />
+      <br />
+      This post is a<Stats readingTime={readingTime} />
     </>
   );
 }
