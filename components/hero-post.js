@@ -10,7 +10,7 @@ export default function HeroPost({
   return (
     <section>
       <h3>
-        <Link as={`/posts/${slug}`} href="/posts/[slug]" prefetch={false}>
+        <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a>
             <RichText render={title} />
           </a>

@@ -21,9 +21,7 @@ export default function Intro() {
       </p>
       <p>I plan on continuing to ship until I get tech-sick.</p>
       <hr />
-      You Can Find Me Around Here:
-      <br />
-      <br />
+      <h2> You Can Find Me Around Here:</h2>
       <a
         href="https://www.indiehackers.com/matchmike1313"
         hrefLang={LANGUAGE_LOCALE}
@@ -60,7 +58,7 @@ export default function Intro() {
       <br />
       <br />
       <address>
-        <a href="mailto:matchmike1313@gmail.com">matchmike1313@gmail.com</a>
+        <a href="mailto:mdp@hey.com">mdp@hey.com</a>
         <br />
       </address>
       <br />
@@ -119,7 +117,7 @@ export default function Intro() {
         <li>Editor: VS Code</li>
         <li>Static Site Generator: NextJS</li>
         <li>Hosting: Netlify</li>
-        <li>CMS: Prismic.IO</li>
+        <li>CMS: Prismic.io</li>
       </ul>
       <h2>100 Countries by 100</h2>
       <ol>
@@ -137,7 +135,7 @@ export default function Intro() {
         Would you like to collaborate on a project, app, or hire me as a
         part-time CTO?
       </p>
-      <a href="mailto:matchmike1313@gmail.com">Please drop me an email here.</a>
+      <a href="mailto:mdp@hey.com">Please drop me an email here.</a>
     </section>
   );
 }

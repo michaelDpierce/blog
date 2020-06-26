@@ -5,7 +5,12 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en" prefix="og: http://ogp.me/ns#">
         <Head>
-          <link rel="stylesheet" type="text/css" href="/index.min.css" media="screen" />
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="/index.min.css"
+            media="screen"
+          />
         </Head>
         <body>
           <Main />

@@ -18,7 +18,7 @@ export default function PostHeader({ title, author, date, content }) {
       on
       <Date dateString={date} />
       <br />
-      This post is a<Stats readingTime={readingTime} />
+      This post is a <Stats readingTime={readingTime} />
     </>
   );
 }

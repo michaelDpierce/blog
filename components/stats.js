@@ -4,7 +4,7 @@ export default function Stats({ readingTime} ) {
   return (
     <>
       <time>{text}</time>
-      or
+      {' or '}
       <time>{`${words} words`}</time>
       to consume
     </>

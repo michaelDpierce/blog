@@ -1,3 +1,4 @@
+import Header from '@components/header';
 import Container from '@components/container'
 import HeroPost from '@components/hero-post'
 import Intro from '@components/intro'
@@ -14,6 +15,7 @@ export default function Index({ preview, allPosts }) {
   return (
     <>
       <Layout preview={preview}>
+        <Header />
         <Intro />
         <br />
         <SectionSeparator />
