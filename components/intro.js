@@ -53,7 +53,7 @@ export default function Intro() {
         <li>Computer: MacBook Pro 16 Inch 2019</li>
         <li>Editor: VS Code</li>
         <li>Static Site Generator: NextJS</li>
-        <li>Hosting: Netlify</li>
+        <li>Hosting: Vercel</li>
         <li>CMS: Prismic.io</li>
       </ul>
       <h2>100 Countries by 100</h2>
