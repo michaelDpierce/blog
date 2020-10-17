@@ -1,12 +1,11 @@
-export default function Stats({ readingTime} ) {
-  const { minutes, text, time, words } = readingTime;
+export default function Stats({ readingTime }) {
+  const { text, words } = readingTime;
 
   return (
     <>
       <time>{text}</time>
       {' or '}
       <time>{`${words} words`}</time>
-      to consume
     </>
   );
 }

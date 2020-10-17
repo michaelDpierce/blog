@@ -1,11 +1,10 @@
-import Header from '@components/header';
-import Container from '@components/container';
-import Layout from '@components/layout';
 import AllPosts from '@components/all-posts';
-
+import Container from '@components/container';
+import Header from '@components/header';
+import Layout from '@components/layout';
 import { getAllPosts } from '@lib/api';
 
-export default function Quotes({ allPosts }) {
+export default function Posts({ allPosts }) {
   const posts = allPosts;
 
   return (

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 const Subscribe = () => {
   const [loading, setLoading] = useState(false);
@@ -28,20 +28,20 @@ const Subscribe = () => {
     const { error } = await res.json();
 
     if (error) {
-      setErrorMessage(error)
+      setErrorMessage(error);
       return;
     }
 
     window.fathom.trackGoal('WPWJOPKL', 0);
-    setSuccessMessage("You are now subscribed!")
+    setSuccessMessage('You are now subscribed!');
     inputEl.current.value = '';
   };
 
   return (
     <form>
       <fieldset>
-        <legend>Subscribe to my newsletter</legend>
-        <p>Get emails from me about web dev, tech, M&A, travel, and more!</p>
+        <legend>Subscribe to My Newsletter</legend>
+        <p>Get emails from me about life, general updates, travel, and more!</p>
 
         {loading && <p>Submitting...</p>}
 

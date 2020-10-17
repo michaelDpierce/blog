@@ -5,6 +5,7 @@ export default function AllPosts({ posts }) {
     <>
       {posts.map(({ node }) => (
         <Post
+          key={node._meta.uid}
           title={node.title}
           date={node.date}
           slug={node._meta.uid}
