@@ -7,6 +7,7 @@
 
 Before you can start, you'll first need to [install Yarn](https://yarnpkg.com/en/docs/install).
 Then run `yarn` to install project dependencies.
+
 </details>
 
 ## Available Scripts
@@ -22,4 +23,5 @@ In the project directory, you can run:
 `yarn start` starts the application in production mode
 
 ## Branching Strategy
+
 - [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/)
