@@ -12,6 +12,7 @@ import { getAllPostsForHome } from '@lib/api'
 export default function Index({ preview, allPosts }) {
   const heroPost = allPosts[0].node
   const morePosts = allPosts.slice(1)
+  
   return (
     <>
       <Layout preview={preview}>

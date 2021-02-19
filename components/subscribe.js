@@ -54,7 +54,7 @@ const Subscribe = () => {
           type="email"
           name="email"
           id="email"
-          placeholder="you@hey.com (Required)"
+          placeholder="matchmike1313@gmail.com (Required)"
           ref={inputEl}
         />
 

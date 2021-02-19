@@ -3,9 +3,9 @@ export const LANGUAGE_LOCALE = process.env.LANGUAGE_LOCALE;
 export default function Intro() {
   return (
     <section>
-      <h1>Hi, I'm Michael Pierce</h1>
+      <h1>Hi, I'm Michael</h1>
       <p>
-        Welcome to my small & private nook of the internet. This is a blog for
+        Welcome to my small &amp; private nook of the internet. This is a blog for
         family, friends, and the curious person wanting to learn more about me.
         You can find{' '}
         <a href="https://michaelpierce.dev"> my professional blog here</a>.
@@ -21,16 +21,29 @@ export default function Intro() {
       <h2>My Companies</h2>
       <ul>
         <li>
+          Toybox Systems - Acquired in 2021 by XOXO Capital: YC Winter 2018 website design and feedback collaboration tool for design agencies and dev shops
+        </li>
+        <li>
+          Sheet.Best - Acquired in 2021 by XOXO Capital: Google Sheets to API service using Panda data frames
+        </li>
+        <li>
+          ScreenshotAPI - Acquired in 2020 by XOXO Capital: Screenshot API service
+        </li>
+        <li>
+          XOXO Capital - Co-founder and Partner: Micro-PE fund buying unique,
+          profitable, SaaS, businesses
+        </li>
+        <li>
           BankerBox - Investment Banking, Evolved: Acquired by Intralinks, an
           SS&amp;C company in 2019
         </li>
         <li>
-          DigiQuatics - The All-In-One App for Aquatics: 35,000+ Users (Sold to
+          DigiQuatics - The All-In-One App for Aquatics: 40,000+ Users (Sold to
           private buyer in 2019)
         </li>
         <li>
           AutoLytx - Automotive Analytics, Made Simple: Dealers in 5 States
-          (6-figure SaaS)
+          powering over $50mm in inventory orders
         </li>
         <li>
           OpenWaterTracker - Track Open Water Swimmers Easily (Sold to private
