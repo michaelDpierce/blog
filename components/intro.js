@@ -5,9 +5,9 @@ export default function Intro() {
     <section>
       <h1>Hi, I'm Michael</h1>
       <p>
-        Welcome to my small &amp; private nook of the internet. This is a blog for
-        family, friends, and the curious person wanting to learn more about me.
-        You can find{' '}
+        Welcome to my small &amp; private nook of the internet. This is a blog
+        for family, friends, and the curious person wanting to learn more about
+        me. You can find{' '}
         <a href="https://michaelpierce.dev"> my professional blog here</a>.
       </p>
       <hr />
@@ -21,44 +21,75 @@ export default function Intro() {
       <h2>My Companies</h2>
       <ul>
         <li>
-          Toybox Systems - Acquired in 2021 by XOXO Capital: YC Winter 2018 website design and feedback collaboration tool for design agencies and dev shops
+          <a href="https://greetbox.co">GreetBox</a> - Group-Based Greeting
+          Cards Online. Bring joy to someone's life with an online eCard filled
+          with messages, photos, videos, and GIFs!
+          <br />
+          <br />
         </li>
         <li>
-          Sheet.Best - Acquired in 2021 by XOXO Capital: Google Sheets to API service using Panda data frames
+          FeatureAuditor - User driven product decisions made easy (Pre-Launch)
+          <br />
+          <br />
         </li>
         <li>
-          ScreenshotAPI - Acquired in 2020 by XOXO Capital: Screenshot API service
+          <a href="https://sheet.best">Sheet.Best</a> - Acquired in 2021 by XOXO
+          Capital: Google Sheets to API service using Panda data frames
+          <br />
+          <br />
         </li>
         <li>
-          XOXO Capital - Co-founder and Partner: Micro-PE fund buying unique,
-          profitable, SaaS, businesses
+          <a href="https://www.screenshotapi.net/">ScreenshotAPI</a> - Acquired
+          in 2020 by XOXO Capital: Screenshot API service
+          <br />
+          <br />
         </li>
         <li>
-          BankerBox - Investment Banking, Evolved: Acquired by Intralinks, an
-          SS&amp;C company in 2019
+          <a href="https://www.xoxo.capital/">XOXO Capital</a> - Co-founder and
+          Partner: Micro-PE fund buying unique, profitable, SaaS, businesses
+          <br />
+          <br />
         </li>
         <li>
-          DigiQuatics - The All-In-One App for Aquatics: 40,000+ Users (Sold to
-          private buyer in 2019)
+          <a href="https://www.intralinks.com/products/mergers-acquisitions/deal-marketing">
+            BankerBox (Now Deal Marketing)
+          </a>{' '}
+          - Investment Banking, Evolved: Acquired by Intralinks, an SS&amp;C
+          company in 2019
+          <br />
+          <br />
         </li>
         <li>
-          AutoLytx - Automotive Analytics, Made Simple: Dealers in 5 States
-          powering over $50mm in inventory orders
+          <a href="https://www.digiquatics.com/">DigiQuatics</a> - The
+          All-In-One App for Aquatics: 40,000+ Users (Sold to private buyer in
+          2019)
+          <br />
+          <br />
         </li>
         <li>
-          OpenWaterTracker - Track Open Water Swimmers Easily (Sold to private
-          buyer in 2019)
+          <a href="https://www.autolytx.com/">Autolytx</a> - Automotive
+          Analytics, Made Simple: Dealers in 5 States powering over $50mm in
+          inventory orders
+          <br />
+          <br />
+        </li>
+        <li>
+          <a href="https://www.openwatertracker.com/">OpenWaterTracker</a> -
+          Track Open Water Swimmers Easily (Sold to private buyer in 2019)
+          <br />
+          <br />
         </li>
         <li>
           WeOwePro - Dealership WeOwe Forms Workflow: Worked with local dealers
-          in Denver area in 2017
+          in Denver area in 2017 (Retired)
+          <br />
+          <br />
         </li>
         <li>
           AdWheels - Rideshare Advertising Platform: 20+ Local Uber Drivers in
-          Denver + 10 Prominent Local Businesses
-        </li>
-        <li>
-          FeatureAuditor - User driven product designs made easy: Pre-Launch
+          Denver + 10 Prominent Local Businesses (Retired)
+          <br />
+          <br />
         </li>
       </ul>
       <h2>Currently Using</h2>
